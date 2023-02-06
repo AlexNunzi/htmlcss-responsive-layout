@@ -18,13 +18,14 @@
 
 .debug .dbg-item{
     background-color: var(--secondary-color);
+}
+
+.debug header .dbg-item{
     height: 75px;
 }
 
 /* DEBUG MAIN -------------------------------------- */
-.debug .dbg-item{
-    background-color: var(--secondary-color);
-}
+
 
 /* DEBUG FOOTER ------------------------------------ */
 
@@ -48,6 +49,8 @@
 .align-center{
     align-items: center;
 }
+
+
 /* HEADER ------------------------------------------ */
 
 header{
@@ -64,7 +67,27 @@ header{
 
 /* MAIN -------------------------------------------- */
 
+main{
+    padding-top: 100px;
+}
 
+main .card{
+    margin-bottom: 1.5rem;
+    text-align: left;
+    padding: 2rem;
+    text-align: center;
+}
+
+main .card:first-child{
+    padding-bottom: 0;
+    text-align: left;
+}
+
+main .card .card-img{
+    text-align: center;
+}
+
+/* intro SECTION ----------------------------------- */
 
 
 /* FOOTER ------------------------------------------ */
@@ -76,11 +99,34 @@ header{
     .container{
         max-width: 730px;
     }
+    
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #intro .card{
+        width: calc((100% / 3) - 3rem);
+        margin: 1.5rem;
+    }
+    
+    #intro .card:first-child{
+        width: calc((100% / 3 *2) - 3rem);
+
+    }
+
+    #intro .card .card-img{
+        text-align: left;
+    }
 }
 
 @media screen and (min-width: 992px){
     .container{
         max-width: 960px;
+    }
+
+    #intro .card:first-child{
+        display: flex;
     }
 }
 
