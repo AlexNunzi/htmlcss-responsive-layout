@@ -9,6 +9,8 @@
     --primary-color: #0084fd;
     --secondary-color: #b5ddff;
     --tertiary-color: #9792e4;
+
+    --text-white: #ffffff;
 }
 
 /* REGOLE DI DEBUG --------------------------------- */
@@ -39,6 +41,8 @@
 /* REGOLE DI CSS ----------------------------------- */
 /* REGOLE GENERALI --------------------------------- */
 
+
+
 .container{
     max-width: 600px;
     margin: 0 auto;
@@ -67,6 +71,7 @@
 
 .card-big{
     padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
 }
 
 section{
@@ -74,6 +79,10 @@ section{
     padding-bottom: 5rem;
 }
 
+.theme-purple{
+    background-color: var(--tertiary-color);
+    color: var(--text-white);
+}
 
 /* HEADER ------------------------------------------ */
 
@@ -126,8 +135,11 @@ main{
 
 
 
-/* intro SECTION ----------------------------------- */
+/* TESTIMONIALS SECTION ---------------------------- */
 
+#testimonials{
+    text-align: center;
+}
 
 /* FOOTER ------------------------------------------ */
 
@@ -157,6 +169,17 @@ main{
     #intro .card .card-img{
         text-align: left;
     }
+
+    /* TESTIMONIALS SECTION */
+
+    #testimonials .card{
+        display: flex;
+        text-align: left;
+    }
+
+    #testimonials .card .card-text{
+        margin-left: 32px;
+    }
 }
 
 @media screen and (min-width: 992px){
@@ -183,6 +206,8 @@ main{
     #planning .card{
         width: 50%;
     }
+
+
 
 }
 
