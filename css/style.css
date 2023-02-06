@@ -7,18 +7,17 @@
 
 :root{
     --primary-color: #0084fd;
-    --secondary-color: #003bfd;
+    --secondary-color: #b5ddff;
+    --tertiary-color: #9792e4;
 }
 
 /* REGOLE DI DEBUG --------------------------------- */
 
-
+.debug .dbg-item{
+    background-color: #003bfd;
+}
 
 /* DEBUG HEADER ------------------------------------ */
-
-.debug .dbg-item{
-    background-color: var(--secondary-color);
-}
 
 .debug header .dbg-item{
     height: 75px;
@@ -26,6 +25,13 @@
 
 /* DEBUG MAIN -------------------------------------- */
 
+.debug #planning{
+    /* height: 300px; */
+}
+
+.debug #planning .card{
+    background-color: #ffffff;
+}
 
 /* DEBUG FOOTER ------------------------------------ */
 
@@ -38,6 +44,10 @@
     margin: 0 auto;
 }
 
+.content{
+    margin-bottom: 2rem;
+}
+
 .d-flex{
     display: flex;
 }
@@ -48,6 +58,20 @@
 
 .align-center{
     align-items: center;
+}
+
+.card{
+    text-align: center;
+    padding: 2rem;
+}
+
+.card-big{
+    padding: 2rem 1.5rem;
+}
+
+section{
+    padding-top: 4rem;
+    padding-bottom: 5rem;
 }
 
 
@@ -71,21 +95,36 @@ main{
     padding-top: 100px;
 }
 
-main .card{
-    margin-bottom: 1.5rem;
-    text-align: left;
-    padding: 2rem;
-    text-align: center;
+/* INTRO SECTION ----------------------------------- */
+
+#intro{
+    padding-top: 0;
 }
 
-main .card:first-child{
+#intro .card{
+    margin-bottom: 1.5rem;
+}
+
+#intro .card:first-child{
     padding-bottom: 0;
     text-align: left;
 }
 
-main .card .card-img{
+#intro .card .card-img{
     text-align: center;
 }
+
+/* PLANNING SECTION -------------------------------- */
+
+#planning{
+    background-color: var(--tertiary-color);
+}
+
+#planning .content-img{
+    text-align: center;
+}
+
+
 
 /* intro SECTION ----------------------------------- */
 
@@ -125,9 +164,26 @@ main .card .card-img{
         max-width: 960px;
     }
 
+    /* INTRO SECTION */
+
     #intro .card:first-child{
         display: flex;
     }
+
+    /* PLANNING SECTION */
+
+    #planning .container{
+        display: flex;
+        align-items: flex-end;
+        padding-left: 5.5rem;
+        padding-right: 5.5rem;
+    }
+
+    #planning .content, 
+    #planning .card{
+        width: 50%;
+    }
+
 }
 
 /* ANIMAZIONI -------------------------------------- */
