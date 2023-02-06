@@ -5,14 +5,26 @@
     font-family: sans-serif;
 }
 
+:root{
+    --primary-color: #0084fd;
+    --secondary-color: #003bfd;
+}
+
 /* REGOLE DI DEBUG --------------------------------- */
+
 
 
 /* DEBUG HEADER ------------------------------------ */
 
+.debug .dbg-item{
+    background-color: var(--secondary-color);
+    height: 75px;
+}
 
 /* DEBUG MAIN -------------------------------------- */
-
+.debug .dbg-item{
+    background-color: var(--secondary-color);
+}
 
 /* DEBUG FOOTER ------------------------------------ */
 
@@ -20,11 +32,39 @@
 /* REGOLE DI CSS ----------------------------------- */
 /* REGOLE GENERALI --------------------------------- */
 
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+}
 
+.d-flex{
+    display: flex;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
 /* HEADER ------------------------------------------ */
+
+header{
+    height: 75px;
+    width: 100%;
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
 
 
 /* MAIN -------------------------------------------- */
+
+
 
 
 /* FOOTER ------------------------------------------ */
@@ -32,6 +72,17 @@
 
 /* MEDIA QUERY ------------------------------------- */
 
+@media screen and (min-width: 768px){
+    .container{
+        max-width: 730px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .container{
+        max-width: 960px;
+    }
+}
 
 /* ANIMAZIONI -------------------------------------- */
 
