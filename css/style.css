@@ -10,13 +10,17 @@
     --secondary-color: #b5ddff;
     --tertiary-color: #9792e4;
 
-    --text-white: #ffffff;
+    --white: #ffffff;
 }
 
 /* REGOLE DI DEBUG --------------------------------- */
 
 .debug .dbg-item{
     background-color: #003bfd;
+}
+
+.debug .container{
+    border: 2px dotted #000000;
 }
 
 /* DEBUG HEADER ------------------------------------ */
@@ -35,6 +39,10 @@
     background-color: #ffffff;
 }
 
+.debug .card{
+    border: 2px dashed #000000;
+}
+
 /* DEBUG FOOTER ------------------------------------ */
 
 
@@ -50,6 +58,10 @@
 
 .content{
     margin-bottom: 2rem;
+}
+
+h2{
+    margin-bottom: 3rem;
 }
 
 .d-flex{
@@ -81,13 +93,22 @@ section{
 
 .theme-purple{
     background-color: var(--tertiary-color);
-    color: var(--text-white);
+    color: var(--white);
+}
+
+.theme-white{
+    background-color: var(--white);
+    color: var(--tertiary-color);
+}
+
+.theme-white p{
+    color: #000000;
 }
 
 /* HEADER ------------------------------------------ */
 
 header{
-    height: 75px;
+    /* height: 75px; */
     width: 100%;
     background-color: var(--primary-color);
     position: fixed;
@@ -141,6 +162,32 @@ main{
     text-align: center;
 }
 
+/* BENEFITS SECTION */
+
+#benefits{
+    text-align: center;
+    background-color: var(--tertiary-color);
+}
+
+#benefits .card{
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+/* ABOUT-US SECTION */
+
+#about-us .section-text p{
+    margin-bottom: 3rem;
+}
+
+/* START-NOW SECTION */
+
+#start-now{
+    background-color: var(--tertiary-color);
+    text-align: center;
+
+}
+
 /* FOOTER ------------------------------------------ */
 
 
@@ -154,16 +201,16 @@ main{
     .cards{
         display: flex;
         flex-wrap: wrap;
+        margin: -0.75rem;
     }
 
     #intro .card{
-        width: calc((100% / 3) - 3rem);
-        margin: 1.5rem;
+        width: calc((100% / 3) - 1.5rem);
+        margin: 0.75rem;
     }
     
     #intro .card:first-child{
-        width: calc((100% / 3 *2) - 3rem);
-
+        width: calc((100% / 3 * 2) - 1.5rem);
     }
 
     #intro .card .card-img{
@@ -179,6 +226,30 @@ main{
 
     #testimonials .card .card-text{
         margin-left: 32px;
+    }
+
+    /* BENEFITS SECTION */
+
+    #benefits .card{
+        width: calc(50% - 4rem);
+        margin: 2rem 2rem;
+    }
+
+    /* ABOUT-US SECTION */
+
+    #about-us .container{
+        display: flex;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    #about-us .section-text{
+        width: calc(60% - 5rem);
+        margin-right: 5rem;
+    }
+
+    #about-us .profile{
+        width: 40%;
     }
 }
 
@@ -207,7 +278,17 @@ main{
         width: 50%;
     }
 
+    /* ABOUT-US SECTION */
 
+    #about-us .container{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    #about-us .section-text{
+        width: calc(60% - 6.5rem);
+        margin-right: 6.5rem;
+    }
 
 }
 
