@@ -383,8 +383,16 @@ margin-bottom: 5.5rem;
 
 #start-now{
     background-color: var(--tertiary-color);
+    color: var(--white);
     text-align: center;
+}
 
+.emphasis{
+    font-size: 5rem;
+}
+
+#start-now .button-shape{
+    display: inline-block;
 }
 
 /* FOOTER ------------------------------------------ */
