@@ -110,10 +110,27 @@ section{
     color: #000000;
 }
 
+.button-shape{
+    padding: 0.5rem;
+    border-radius: 50px;
+}
+
+a.button-shape, 
+li a{
+    text-decoration: none;
+}
+
+.button-white{
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+
 /* HEADER ------------------------------------------ */
 
 header{
     /* height: 75px; */
+    padding: 1rem 0;
     width: 100%;
     background-color: var(--primary-color);
     position: fixed;
@@ -122,6 +139,17 @@ header{
     z-index: 9999;
 }
 
+#logo{
+    height: 40px;
+}
+
+header ul{
+    display: none;
+}
+
+header i{
+    color: #FFFFFF;
+}
 
 
 /* MAIN -------------------------------------------- */
@@ -207,7 +235,7 @@ footer .container div:first-of-type{
 
 /* MEDIA QUERY ------------------------------------- */
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px){  
     .container{
         max-width: 730px;
         padding: 0;
@@ -286,6 +314,26 @@ footer .container div:first-of-type{
 @media screen and (min-width: 992px){
     .container{
         max-width: 960px;
+    }
+
+    /* HEADER */
+    header ul{
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+    }
+
+    header li{
+        margin: 0 0.5rem;
+    }
+
+    header li a{
+        color: #FFFFFF;
+        padding: 0.5rem;
+    }
+    
+    header i.fa-solid{
+        display: none;
     }
 
     /* INTRO SECTION */
