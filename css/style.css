@@ -411,12 +411,18 @@ margin-bottom: 5.5rem;
 
 footer{
     background-color: #333333;
+    color: var(--white);
     text-align: center;
     padding: 2.5rem 0;
 }
 
 footer .container p:first-of-type{
     margin-bottom: 4rem;
+}
+
+footer a{
+    text-decoration: underline;
+    color: #938ede;
 }
 
 /* MEDIA QUERY ------------------------------------- */
