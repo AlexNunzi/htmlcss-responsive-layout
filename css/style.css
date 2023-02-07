@@ -53,6 +53,11 @@
 
 .container{
     max-width: 600px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.container-small{
     margin: 0 auto;
 }
 
@@ -190,17 +195,34 @@ main{
 
 /* FOOTER ------------------------------------------ */
 
+footer{
+    background-color: #333333;
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+footer .container div:first-of-type{
+    margin-bottom: 4rem;
+}
 
 /* MEDIA QUERY ------------------------------------- */
 
 @media screen and (min-width: 768px){
     .container{
         max-width: 730px;
+        padding: 0;
     }
     
+    .container-small{
+        max-width: 460px;
+    }
+
     .cards{
         display: flex;
         flex-wrap: wrap;
+    }
+    
+    #intro .cards{
         margin: -0.75rem;
     }
 
@@ -231,8 +253,12 @@ main{
     /* BENEFITS SECTION */
 
     #benefits .card{
-        width: calc(50% - 4rem);
-        margin: 2rem 2rem;
+        width: calc(50% - 2rem);
+        margin: 1rem 1rem;
+    }
+
+    #benefits .cards{
+        margin: -1rem;
     }
 
     /* ABOUT-US SECTION */
@@ -250,6 +276,10 @@ main{
 
     #about-us .profile{
         width: 40%;
+    }
+
+    footer .container{
+        width: 460px;
     }
 }
 
@@ -276,6 +306,11 @@ main{
     #planning .content, 
     #planning .card{
         width: 50%;
+    }
+
+    #planning .card-big,
+    #planning .content{
+        margin-bottom: 0;
     }
 
     /* ABOUT-US SECTION */
