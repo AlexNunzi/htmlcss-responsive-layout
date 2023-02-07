@@ -20,11 +20,11 @@
 }
 
 .debug .container{
-    border: 2px dotted #000000;
+    /* border: 2px dotted #000000; */
 }
 
 .debug .container-small{
-    border: 3px solid #fdc15f
+    /* border: 3px solid #fdc15f */
 }
 
 /* DEBUG HEADER ------------------------------------ */
@@ -40,11 +40,11 @@
 }
 
 .debug #planning .card{
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
 }
 
 .debug .card{
-    border: 2px dashed #000000;
+    /* border: 2px dashed #000000; */
 }
 
 /* DEBUG FOOTER ------------------------------------ */
@@ -234,6 +234,9 @@ main{
 
 /* PLANNING SECTION -------------------------------- */
 
+#planning .card{
+    background-color: var(--white);
+}
 
 #planning .content-img{
 margin: auto;
@@ -343,7 +346,6 @@ margin-bottom: 5.5rem;
 
 #benefits .card-number{
     font-size: 4rem;
-    font-family: serif;
     font-weight: bold;
 }
 
