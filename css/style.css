@@ -169,6 +169,10 @@ li a{
     padding-top: 0.25rem;
 }
 
+.overtitle{
+    margin-bottom: 2.5rem;
+}
+
 /* HEADER ------------------------------------------ */
 
 header{
@@ -255,6 +259,64 @@ margin-bottom: 5.5rem;
     text-align: center;
 }
 
+#testimonials h2{
+    color: var(--tertiary-color);
+}
+
+#testimonials .container > p{
+    margin-bottom: 3.5rem;
+}
+
+#testimonials .card p{
+    margin-bottom: 2rem;
+}
+
+#testimonials .card p::before{
+    content: '\f10d';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 0.5rem;
+}
+
+#testimonials .card p::after{
+    content: '\f10e';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: .5rem;
+}
+
+#testimonials .name{
+    text-transform: uppercase;
+    font-weight: bold
+}
+
+#testimonials .card img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.profile-img{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.profile-img-1{
+    background-image: url(../img/testimonial1.jpg);
+}
+
+.profile-img-2{
+    background-image: url(../img/testimonial2.jpg);
+}
+
+.profile-img-3{
+    background-image: url(../img/testimonial3.jpg);
+}
+
 /* BENEFITS SECTION */
 
 #benefits{
@@ -335,10 +397,15 @@ footer .container div:first-of-type{
     #testimonials .card{
         display: flex;
         text-align: left;
+        align-items: center;
     }
 
     #testimonials .card .card-text{
         margin-left: 32px;
+    }
+
+    .profile-img{
+        flex-shrink: 0;
     }
 
     /* BENEFITS SECTION */
