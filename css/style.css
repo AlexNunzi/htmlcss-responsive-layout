@@ -422,6 +422,15 @@ margin-bottom: 5.5rem;
     margin: 2.5rem;
 }
 
+.middot::before{
+    content: '\2022\00A0';
+    font-weight: bold;
+}
+
+.middot a{
+    color: var(--white);
+}
+
 
 /* FOOTER ------------------------------------------ */
 
