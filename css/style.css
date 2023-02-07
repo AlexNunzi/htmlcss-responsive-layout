@@ -66,7 +66,13 @@
 }
 
 h2{
+    font-size: 2.5rem;
     margin-bottom: 3rem;
+}
+
+h3{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .d-flex{
@@ -85,6 +91,12 @@ h2{
     text-align: center;
     padding: 2rem;
     border-radius: 20px;
+    color: #000000;
+}
+
+.card p, 
+.content p{
+    line-height: 2rem;
 }
 
 .card-big{
@@ -102,14 +114,9 @@ section{
     color: var(--primary-color);
 }
 
-.theme-cyan h3{
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-}
 
 .theme-cyan p{
     color: #566979;
-    line-height: 2rem;
     font-weight: 600;
 }
 
@@ -149,6 +156,17 @@ li a{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
     margin: 2.5rem 0;
+}
+
+.button-purple{
+    background-color: var(--tertiary-color);
+    color: #ffffff;
+}
+
+.button-purple i{
+    color: #000000;
+    font-size: 1.5rem;
+    padding-top: 0.25rem;
 }
 
 /* HEADER ------------------------------------------ */
@@ -212,15 +230,24 @@ main{
 
 /* PLANNING SECTION -------------------------------- */
 
-#planning{
-    background-color: var(--tertiary-color);
-}
 
 #planning .content-img{
-    text-align: center;
+margin: auto;
+width: 100%;
+margin-bottom: 5.5rem;
 }
 
+#planning .card-big img{
+    width: 100%;
+    margin: auto;
+}
 
+#planning .card-big a{
+    height: 3rem;
+    width: 3rem;
+    display: inline-block;
+    margin-top: 2rem;
+}
 
 /* TESTIMONIALS SECTION ---------------------------- */
 
@@ -396,14 +423,22 @@ footer .container div:first-of-type{
         padding-right: 5.5rem;
     }
 
+    #planning .content{
+        margin-right: 4rem;
+    }
+
     #planning .content, 
     #planning .card{
-        width: 50%;
+        width: calc(50% - 20px);
     }
 
     #planning .card-big,
     #planning .content{
         margin-bottom: 0;
+    }
+
+    #planning .content-img{
+        margin-bottom: 8rem;
     }
 
     /* ABOUT-US SECTION */
