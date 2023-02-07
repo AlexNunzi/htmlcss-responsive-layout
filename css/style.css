@@ -247,17 +247,18 @@ margin-bottom: 5.5rem;
 }
 
 #planning .card-big a{
-    height: 3rem;
-    width: 3rem;
     display: inline-block;
     margin-top: 2rem;
 }
 
 #planning .button-purple i{
     color: #000000;
-    font-size: 1.5rem;
-    padding-top: 0.25rem;
+    font-size: 1.25rem;
+    width: 2rem;
+    line-height: 2rem;
+    display: block;
 }
+
 
 /* TESTIMONIALS SECTION ---------------------------- */
 
