@@ -161,6 +161,8 @@ li a{
 .button-purple{
     background-color: var(--tertiary-color);
     color: #ffffff;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .button-purple i{
@@ -327,6 +329,21 @@ margin-bottom: 5.5rem;
 #benefits .card{
     margin-bottom: 2rem;
     text-align: left;
+    background-color: var(--white);
+}
+
+#benefits h2{
+    color: var(--white);
+}
+
+#benefits .card-number{
+    font-size: 4rem;
+    font-family: serif;
+    font-weight: bold;
+}
+
+#benefits p{
+    margin-bottom: 2rem;
 }
 
 /* ABOUT-US SECTION */
@@ -506,6 +523,13 @@ footer .container div:first-of-type{
 
     #planning .content-img{
         margin-bottom: 8rem;
+    }
+
+    /* BENEFITS SECTION */
+
+    #benefits .card{
+        width: calc((100% /3) - 2rem);
+        margin: 1rem 1rem;
     }
 
     /* ABOUT-US SECTION */
