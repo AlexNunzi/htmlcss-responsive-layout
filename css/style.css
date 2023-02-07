@@ -53,7 +53,9 @@
 /* REGOLE DI CSS ----------------------------------- */
 /* REGOLE GENERALI --------------------------------- */
 
-
+html{
+    scroll-padding-top: 75px;
+}
 
 .container{
     max-width: 600px;
